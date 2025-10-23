@@ -1,0 +1,11 @@
+# Python cache & Jupyter checkpoints
+__pycache__/
+.ipynb_checkpoints/
+
+# Virtual envs (keep out of repo)
+env/
+venv/
+.venv/
+
+# Secrets
+.env
