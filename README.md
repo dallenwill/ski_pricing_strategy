@@ -1,76 +1,67 @@
-# Project Title
-
----
+# Ski Pricing Strategy Project
 
 ## Overview
-Briefly describe what the project does and why it matters.
+This project builds a machine-learning model to recommend a fair weekend ticket price for a target ski resort. The model uses historical resort data, weather features, seasonal indicators, and engineered transformations to estimate an appropriate price.
 
-Example:  
-This project analyzes ski resort ticket prices to find key factors that affect pricing and builds a model to predict fair prices for new resorts.
+The final model recommends a ticket price of **$94.58**, compared to the resort’s current price of **$81**.
 
 ---
 
-## Objective
-What are you trying to achieve?
-
-Example:
-- Understand what drives pricing differences.
-- Build a predictive model for ski ticket prices.
-- Provide insights for pricing strategy.
+## Project Goals
+- Analyze factors that influence ski ticket prices  
+- Compare multiple regression models  
+- Select the best model using cross-validation  
+- Predict a recommended price for the target resort  
 
 ---
 
 ## Data
-What data do you use and where it comes from?
+The project uses processed and engineered features generated in earlier steps of the pipeline.
 
-Example:
-- Dataset: ski_resort_data.csv  
-- Source: public dataset or company internal data  
-- Features: state, snowfall, altitude, lifts, price, etc.
+Key artifacts include:
+- Transformed training/validation data  
+- Feature names  
+- Target resort feature vector  
 
----
-
-## Tools & Libraries
-List key tools or languages you used.
-
-Example:
-- Python, Pandas, NumPy  
-- Scikit-learn, Matplotlib  
-- Jupyter Notebook
+Raw data is excluded for size/privacy reasons.
 
 ---
 
-## Project Workflow
-1. Problem Definition  
-2. Data Wrangling 
-3. Exploratory Data Analysis (EDA) 
-4. Feature Engineering
-5. Modeling 
-6. Reporting
+## Tools
+- Python  
+- NumPy, Pandas  
+- Scikit-learn  
+- Jupyter Notebook  
 
 ---
 
-## Results
-Summarize main findings or performance.
-
-Example:
-- Top 3 features affecting price: altitude, snowfall, amenities  
-- Model achieved R² = 0.87  
-- Prices in Colorado are ~40% higher than average
+## Workflow
+1. **Problem Definition**  
+2. **Data Wrangling**  
+3. **EDA**  
+4. **Feature Engineering**  
+5. **Modeling & Comparison**  
+6. **Model Selection & Final Prediction**  
 
 ---
 
-## Files
-- `project_01_problem_definition.ipynb` 
-- `project_02_data_wrangling.ipynb` 
-- `project_03_exploratory_data_analysis.ipynb`
-- `project_04_feature_engineering.ipynb`
-- `project_05_modeling.ipynb`
+## Notebooks
+- `sps_01_problem_definition.ipynb`  
+- `sps_02_data_wrangling.ipynb`  
+- `sps_03_eda.ipynb`  
+- `sps_04_feature_engineering.ipynb`  
+- `sps_05_modeling.ipynb`  
+
+---
+
+## Final Result
+- **Current Price:** $81  
+- **Model-Recommended Price:** **$94.58**  
+- **Selected Model:** Ridge Regression (α = 1)
 
 ---
 
 ## Author
-Dallen Huang  
-Data Scientist  
+**Dallen Huang**  
 Los Angeles, CA  
-[GitHub: dallenwill](https://github.com/dallenwill)
+GitHub: [dallenwill](https://github.com/dallenwill)
